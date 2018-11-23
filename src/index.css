@@ -39,6 +39,8 @@ text-align: center;
 letter-spacing: 0.1em;
 color: #FFF;
 box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.25);
+cursor: pointer;
+outline: none;
 }
 .grayBtn{
 background: #57595A;
@@ -57,7 +59,7 @@ background: #ED5C2C;
 .bigBtn{
 grid-column: span 2;
 }
-/*animation does not work*/
+/*animation does not work!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 @keyframes grayBtnClicked {
 50%  {
   background: #454647;
@@ -73,4 +75,19 @@ box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.25);
 html{
 font-size: 1vh;
 }
+}
+/*footer*/
+footer p{
+font-family: 'Roboto', sans-serif;
+color: #FFF;
+font-size: 2vh;
+position:absolute;
+top: 95vh;
+width:90vw;
+text-align: right;
+opacity:0.6;
+}
+
+footer a{
+color:white;
 }
