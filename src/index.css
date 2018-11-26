@@ -10,22 +10,37 @@ background-color: #373840;
 width: 35rem;
 height: 40.7rem;
 border-radius: 1.38rem;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-gap: 1.38rem;
 padding: 1.38rem;
 margin:auto;
 margin-top:20vh;
 box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
 }
 #screen{
-grid-column: span 4;
 background: #A2AF77;
 height: 7.1rem;
 margin:0px;
 margin-top:2rem;
+margin-bottom: 3rem;
 border-radius: 0.35rem;
 box-shadow: inset 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+#screenText{
+  font-family: 'Roboto',sans-serif;
+  margin:0;
+  padding-top:1.5rem;
+  padding-right:1rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 4rem;
+  text-align: right;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+#buttons{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 1.38rem;
 }
 .button{
 font-family: 'Roboto', sans-serif;
@@ -41,6 +56,7 @@ color: #FFF;
 box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.25);
 cursor: pointer;
 outline: none;
+height:4.5rem;
 }
 .grayBtn{
 background: #57595A;
@@ -53,23 +69,14 @@ animation-duration: 2s;
 background: #1B0F0F;
 }
 .redBtn{
+height:auto;
 grid-row: span 2;
 background: #ED5C2C;
 }
 .bigBtn{
 grid-column: span 2;
 }
-/*animation does not work!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-@keyframes grayBtnClicked {
-50%  {
-  background: #454647;
-  box-shadow: inset 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
-}
-100% {
-background: #57595A;
-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.25);
-}
-}
+
 /*media queries*/
 @media (min-width:1100px){
 html{
